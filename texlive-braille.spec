@@ -1,3 +1,9 @@
+# revision 20655
+# category Package
+# catalog-ctan /macros/latex/contrib/braille
+# catalog-date 2010-02-20 15:53:07 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-braille
 Version:	20100220
 Release:	1
@@ -48,6 +54,7 @@ braille symbols.
 %doc %{_texmfdistdir}/doc/latex/braille/grade2.py
 %doc %{_texmfdistdir}/doc/latex/braille/summary.pdf
 %doc %{_texmfdistdir}/doc/latex/braille/summary.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ braille symbols.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
