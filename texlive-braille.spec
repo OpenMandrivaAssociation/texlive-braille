@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-braille
 Version:	20100220
-Release:	7
+Release:	8
 Summary:	Support for braille
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braille
