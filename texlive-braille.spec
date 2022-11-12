@@ -1,18 +1,12 @@
-# revision 20655
-# category Package
-# catalog-ctan /macros/latex/contrib/braille
-# catalog-date 2010-02-20 15:53:07 +0100
-# catalog-license other-free
-# catalog-version undef
 Name:		texlive-braille
-Version:	20190228
-Release:	2
+Version:	20655
+Release:	1
 Summary:	Support for braille
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braille
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.r20655.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.doc.r20655.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ package braille.sty takes the tags and prints out corresponding
 braille symbols.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,25 +42,10 @@ braille symbols.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100220-2
-+ Revision: 749885
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100220-1
-+ Revision: 717982
-- texlive-braille
-- texlive-braille
-- texlive-braille
-- texlive-braille
-- texlive-braille
-
