@@ -1,6 +1,6 @@
 Name:		texlive-braille
 Version:	20655
-Release:	1
+Release:	2
 Summary:	Support for braille
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braille
