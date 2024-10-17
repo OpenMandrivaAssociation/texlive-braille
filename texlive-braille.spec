@@ -3,7 +3,7 @@ Version:	20655
 Release:	2
 Summary:	Support for braille
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/braille
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/braille
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/braille.doc.r%{version}.tar.xz
